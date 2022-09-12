@@ -64,6 +64,11 @@ p {
   width: 50px;
 }
 
+.social-icon {
+  width: 30px;
+  margin: 20px;
+}
+
 .btn {
   display: block;
   background-color: var(--color-blue);
@@ -191,12 +196,34 @@ main {
   margin: 20px 0 10px;
 }
 
+.container-img {
+  width: 100%;
+}
+
 .container p {
   text-align: justify;
   font-size: 14px;
   border-top: 2px solid var(--color-yellow);
   padding-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+.museum-img {
+  width: 100%;
+}
+
+footer {
+  border-top: 2px solid var(--color-yellow);
+  width: 70%;
+  margin: 30px auto 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  text-align: center;
 }
 
 /* MEDIA QUERIES */
