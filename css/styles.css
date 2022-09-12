@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/poppins/Poppins-Medium.otf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/poppins/Poppins-Light.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(/fonts/avenir_ff/AvenirLTStd-Black.otf);
+}
+@font-face {
+  font-family: "Silom";
+  src: url(/fonts/Silom.ttf);
+}
+
 /* VARIABLES */
 :root {
   --color-white: #fff;
@@ -25,10 +46,12 @@ h3 {
 
 body {
   font-family: var(--font-poppins);
+  font-weight: 600;
 }
 
 p {
-  font-size: 14px;
+  font-size: 3px;
+  font-weight: 400;
 }
 
 .icon {
