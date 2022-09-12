@@ -1,3 +1,6 @@
+/* STYLES IMPORTS */
+@import url(/css/exhibitions.css);
+
 /* FONTS */
 @font-face {
   font-family: "Poppins";
@@ -226,12 +229,13 @@ footer p {
   text-align: center;
 }
 
-/* Exhibitions page */
-.exhibitions {
-  margin-top: 20px;
-}
-
 /* MEDIA QUERIES */
+
+@media (min-width: 550px) {
+  .hero {
+    background-image: url(/img/hero.jpg);
+  }
+}
 @media (max-width: 610px) {
   .menu {
     flex-direction: column;
@@ -258,12 +262,6 @@ footer p {
   }
   #check:checked ~ .menu {
     right: 0;
-  }
-}
-
-@media (min-width: 500px) {
-  .hero {
-    background-image: url(/img/hero.jpg);
   }
 }
 
@@ -313,16 +311,10 @@ footer p {
 
 @media (min-width: 1200px) {
   .hero {
-    height: 300px;
+    height: 350px;
   }
 
   .hero h1 {
     font-size: 60px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero {
-    height: 350px;
   }
 }
