@@ -1,22 +1,27 @@
+/* FONTS */
 @font-face {
   font-family: "Poppins";
   src: url(/fonts/poppins/Poppins-Medium.otf);
   font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url(/fonts/poppins/Poppins-Light.otf);
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Avenir";
   src: url(/fonts/avenir_ff/AvenirLTStd-Black.otf);
+  font-style: normal;
 }
 @font-face {
   font-family: "Silom";
   src: url(/fonts/Silom.ttf);
+  font-style: normal;
 }
 
 /* VARIABLES */
@@ -24,6 +29,8 @@
   --color-white: #fff;
   --color-black: #000;
   --color-blue: #1b455d;
+  --color-yellow: #e4dd50;
+  --color-orange: #ff8c1a;
   --font-poppins: "Poppins", sans-serif;
   --font-avenir: "Avenir", sans-serif;
   --font-silom: "Silom", sans-serif;
@@ -50,12 +57,27 @@ body {
 }
 
 p {
-  font-size: 3px;
   font-weight: 400;
 }
 
 .icon {
   width: 50px;
+}
+
+.btn {
+  display: block;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  text-decoration: none;
+  padding: 5px 25px;
+  font-family: var(--font-poppins);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.btn:hover {
+  color: var(--color-black);
+  background-color: var(--color-orange);
 }
 
 /* Navigation */
@@ -151,6 +173,7 @@ p {
 }
 
 /* Main Section */
+
 main {
   margin-top: 40px;
 }
@@ -160,12 +183,19 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.container h3 {
+  margin: 20px 0 10px;
 }
 
 .container p {
-  width: 70%;
   text-align: justify;
   font-size: 14px;
+  border-top: 2px solid var(--color-yellow);
+  padding-top: 10px;
 }
 
 /* MEDIA QUERIES */
