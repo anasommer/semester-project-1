@@ -1,12 +1,16 @@
 /* FONTS */
 @import url("http://fonts.cdnfonts.com/css/poppins");
 @import url("http://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+@import url("http://fonts.cdnfonts.com/css/silom");
 
 /* VARIABLES */
 :root {
   --color-white: #fff;
   --color-black: #000;
   --color-blue: #1b455d;
+  --font-poppins: "Poppins", sans-serif;
+  --font-avenir: "Avenir", sans-serif;
+  --font-silom: "Silom", sans-serif;
 }
 
 /* Universal CSS props */
@@ -39,7 +43,7 @@ body {
 }
 
 .nav-icon {
-    color: var(--color-blue);
+  color: var(--color-blue);
 }
 
 .menu {
@@ -99,24 +103,76 @@ body {
   display: none;
 }
 
-/* MEDIA QUERIES */
-@media(max-width: 610px){
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 100;
-        background-color: var(--color-white);
-        transition: all 0.2s ease-in-out;
-        padding-top: 30px;
-    }
-    .menu li {margin-top: 10px;}
-    .menu li a {padding: 10px;}
-    .open-menu , .close-menu {display: block;}
-    #check:checked ~ .menu {right: 0;}
+/* Hero Section */
+
+.hero {
+  color: var(--color-white);
+  height: 200px;
+  background-image: url(/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 90%;
 }
+
+.hero h1 {
+  font-family: var(--font-silom);
+  padding-top: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 610px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 100;
+    background-color: var(--color-white);
+    transition: all 0.2s ease-in-out;
+    padding-top: 30px;
+  }
+  .menu li {
+    margin-top: 10px;
+  }
+  .menu li a {
+    padding: 10px;
+  }
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .hero {
+    height: 250px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    height: 350px;
+  }
 }
