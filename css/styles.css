@@ -184,7 +184,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 70%;
-  margin: 20px auto;
+  margin: 20px auto 60px;
 }
 
 .container h3 {
@@ -196,6 +196,7 @@ main {
   font-size: 14px;
   border-top: 2px solid var(--color-yellow);
   padding-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* MEDIA QUERIES */
