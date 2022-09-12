@@ -1,0 +1,122 @@
+/* FONTS */
+@import url("http://fonts.cdnfonts.com/css/poppins");
+@import url("http://fonts.cdnfonts.com/css/avenir-next-lt-pro");
+
+/* VARIABLES */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: #1b455d;
+}
+
+/* Universal CSS props */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Styles */
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.icon {
+  width: 50px;
+}
+
+/* Navigation */
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  background-color: var(--color-white);
+  padding: 12px 20px;
+}
+
+.nav-icon {
+    color: var(--color-blue);
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-left: 30px;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-blue);
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-blue);
+  transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+  width: 100%;
+}
+
+.open-menu,
+.close-menu {
+  color: var(--color-black);
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.close-menu {
+  top: 20px;
+  right: 20px;
+}
+
+#check {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color-white);
+        transition: all 0.2s ease-in-out;
+        padding-top: 30px;
+    }
+    .menu li {margin-top: 10px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+}
+}
