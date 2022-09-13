@@ -106,10 +106,9 @@ p {
   font-weight: 900;
 }
 
-.hero.volunteer {
+.hero.volunteer-hero {
   background-image: url(/img/volunteer.jpeg);
 }
-
 /* Navigation */
 .nav-bar {
   width: 100%;

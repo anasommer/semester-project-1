@@ -1,3 +1,7 @@
+.hero.event-hero {
+  background-image: url(/img/events-img.jpeg);
+}
+
 .events {
   display: flex;
   flex-direction: column;
