@@ -37,6 +37,7 @@
   --font-poppins: "Poppins", sans-serif;
   --font-avenir: "Avenir", sans-serif;
   --font-silom: "Silom", sans-serif;
+  --border-yellow: 2px solid var(--color-yellow);
 }
 
 /* Universal CSS props */
@@ -218,7 +219,7 @@ main {
 }
 
 footer {
-  border-top: 2px solid var(--color-yellow);
+  border-top: var(--border-yellow);
   width: 70%;
   margin: 30px auto 10px;
   text-align: center;
