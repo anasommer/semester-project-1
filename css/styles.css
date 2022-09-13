@@ -93,6 +93,14 @@ p {
   background-color: var(--color-orange);
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .contact {
   font-weight: 900;
 }

@@ -20,10 +20,6 @@
   text-align: right;
 }
 
-.event-hero-img {
-  display: none;
-}
-
 /* MEDIA QUERIES */
 
 @media (min-width: 425px) {
