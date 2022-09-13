@@ -1,6 +1,20 @@
 .events {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.event-container {
+  background-color: var(--color-beige);
+  border: 1px solid var(--color-orange);
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.event-date {
+  list-style: none;
+  color: var(--color-blue);
+  padding-top: 5px;
+  text-align: right;
 }
