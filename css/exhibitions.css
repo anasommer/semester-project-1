@@ -13,6 +13,8 @@
   font-size: 14px;
 }
 
+/* MEDIA QUERIES */
+
 @media (min-width: 900px) {
   .exhibitions {
     margin: 0 auto;
