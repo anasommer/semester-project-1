@@ -93,6 +93,10 @@ p {
   background-color: var(--color-orange);
 }
 
+.contact {
+  font-weight: 900;
+}
+
 /* Navigation */
 .nav-bar {
   width: 100%;
