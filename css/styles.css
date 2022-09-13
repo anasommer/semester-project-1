@@ -1,5 +1,6 @@
 /* STYLES IMPORTS */
 @import url(/css/exhibitions.css);
+@import url(/css/events.css);
 
 /* FONTS */
 @font-face {
@@ -53,6 +54,8 @@ h3 {
   color: var(--color-blue);
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 body {
