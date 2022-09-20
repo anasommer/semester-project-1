@@ -182,6 +182,10 @@ p {
   display: none;
 }
 
+.active {
+  border-bottom: 2px var(--color-blue) solid;
+}
+
 /* Hero Section */
 
 .hero {
