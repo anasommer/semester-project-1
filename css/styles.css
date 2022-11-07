@@ -50,8 +50,8 @@
   padding: 0;
 }
 
-h2,
-h3 {
+h1,
+h2 {
   font-family: var(--font-avenir);
   color: var(--color-blue);
   text-transform: uppercase;
@@ -202,6 +202,7 @@ p {
   padding-top: 30px;
   margin: 0 10px;
   text-align: center;
+  color: #fff;
   text-transform: uppercase;
 }
 
@@ -220,8 +221,9 @@ main {
   margin: 20px auto 60px;
 }
 
-.container h3 {
+.container h2 {
   margin: 20px 0 10px;
+  font-size: 18px;
 }
 
 .container-img {
