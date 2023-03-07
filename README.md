@@ -17,4 +17,5 @@ The goal was to create an interactive science museum page, which target audience
 ## Contact
 
 [My Portolio Page](https://www.anasommer.com/)
+
 [My LinkedIn Page](https://www.linkedin.com/in/anastassia-sommer-146409235/)
