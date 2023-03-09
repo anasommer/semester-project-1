@@ -1,5 +1,7 @@
 ## Semester Project 1
 
+![Semester project website](https://github.com/anasommer/portfolio/blob/main/img/semester1.png)
+
 ## Goal
 
 Semester project Course assignment project at NorOff School of Technology reflecting the student’s creative and technical knowledge and skills based on the first semester curriculum. This includes design principles, project management, communication technology, and developing with HTML/CSS
